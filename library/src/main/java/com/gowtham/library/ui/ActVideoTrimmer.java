@@ -383,6 +383,8 @@ public class ActVideoTrimmer extends LocalizationActivity {
         seekbar.setOnRangeSeekbarChangeListener((minValue, maxValue) -> {
             long minVal = (long) minValue;
             long maxVal = (long) maxValue;
+            if ((maxVal - minVal) > maxToGap)
+                minVal = maxVal - maxToGap;
             if (lastMinValue != minVal) {
                 seekTo((long) minValue);
                 if (!hidePlayerSeek)

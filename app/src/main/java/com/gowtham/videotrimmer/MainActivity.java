@@ -33,7 +33,7 @@ import com.gowtham.library.utils.TrimmerUtils;
 
 import java.io.File;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class    MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private static final String TAG = "MainActivity";
     private VideoView videoView;
